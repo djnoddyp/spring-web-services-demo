@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/springwebservicesdemo.iml" filepath="$PROJECT_DIR$/springwebservicesdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-web-services-demo.iml" filepath="$PROJECT_DIR$/spring-web-services-demo.iml" />
     </modules>
   </component>
 </project>

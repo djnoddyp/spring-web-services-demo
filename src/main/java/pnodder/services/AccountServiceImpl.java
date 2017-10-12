@@ -1,18 +1,23 @@
 package pnodder.services;
 
 import pnodder.model.Account;
+import pnodder.repositories.AccountRepository;
 
 import java.util.List;
 
 public class AccountServiceImpl implements AccountService {
 
-    @Override
-    public void insertAccount(Account account) {
+    private AccountRepository accountRepository;
 
+    public AccountServiceImpl(AccountRepository accountRepository) {
+        this.accountRepository = accountRepository;
     }
 
-    @Override
-    public Integer getAccountBalanceByName(String name) {
-        return null;
+    public void insertAccount(Account account) {
+        accountRepository.addAccount(account);
+    }
+
+    public Double getAccountBalanceByName(String name) {
+        return accountRepository.getAccountBalanceByName(name);
     }
 }
