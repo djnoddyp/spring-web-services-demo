@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://endpoints.pnodder/" xmlns:tns="http://endpoints.pnodder/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="getAccountbalanceByName" type="tns:getAccountbalanceByName"/>
+
+  <xs:element name="getAccountbalanceByNameResponse" type="tns:getAccountbalanceByNameResponse"/>
+
+  <xs:element name="insertAccount" type="tns:insertAccount"/>
+
+  <xs:element name="insertAccountResponse" type="tns:insertAccountResponse"/>
+
+  <xs:complexType name="getAccountbalanceByName">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAccountbalanceByNameResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insertAccount">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:account" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="account">
+    <xs:sequence>
+      <xs:element name="balance" type="xs:double"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insertAccountResponse">
+    <xs:sequence/>
+  </xs:complexType>
+</xs:schema>
+
