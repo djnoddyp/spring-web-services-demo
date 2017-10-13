@@ -2,6 +2,7 @@ package pnodder.endpoints;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 import pnodder.model.Account;
 import pnodder.services.AccountService;
 

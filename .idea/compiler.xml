@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-web-services-demo" />
+        <module name="springwebservicesdemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="spring-web-services-demo" target="1.8" />
+      <module name="springwebservicesdemo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
